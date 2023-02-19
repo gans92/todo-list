@@ -1,10 +1,6 @@
-<!-- readme crud todo list -->
-
 # Endpoints
 
 ## Create
-
-### Request
 
 `POST /todo`
 
@@ -15,13 +11,9 @@
 
 ## Read
 
-### Request
-
 `GET /todo`
 
 ## Update
-
-### Request
 
 `PUT /todo`
 
@@ -32,7 +24,5 @@
     }
 
 ## Delete
-
-### Request
 
 `DELETE /todo/:id`
