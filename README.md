@@ -1,3 +1,11 @@
+## Como executar
+
+- Clone o repositório
+- Instale as dependências com `npm install`
+- Execute as migrations com `npm run prisma migrate dev`
+- Inicie o servidor com `npm start`
+
+
 # Endpoints
 
 ## Create
