@@ -30,7 +30,6 @@ function App() {
   };
 
   async function handleWithNewButton() {
-    console.log("fasfas");
     setInputVisility(!inputVisbility);
   }
   async function handleWithEditButtonClick(todo) {
@@ -57,7 +56,7 @@ function App() {
 
   async function deleteTodo(todo) {
     const response = await axios.delete(
-      `http://localhost:3333/todos/${todo.id}`
+      `http://localhost:3003/todos/${todo.id}`
     );
     getTodos();
   }
@@ -92,9 +91,10 @@ function App() {
     <div className="App">
       <header className="container">
         <div className="header">
-          <h1>Dont be lazzy</h1>
+          <h1>TodoList</h1>
         </div>
         <Todos todos={todos}></Todos>
+
         <input
           value={inputValue}
           style={{ display: inputVisbility ? "block" : "none" }}
@@ -104,12 +104,7 @@ function App() {
           className="inputName"
         ></input>
         <button
-          onClick={
-            inputVisbility
-              ? selectedTodo
-                ? editTodo
-                : createTodo
-              : handleWithNewButton
+          onClick={ inputVisbility ? selectedTodo ? editTodo : createTodo : handleWithNewButton
           }
           className="newTaskButton"
         >
