@@ -2,44 +2,8 @@
 
 - Clone o repositório
 - Instale as dependências com `npm install`
-- Execute as migrations com `npm run prisma migrate dev`
 - Inicie o servidor com `npm start`
 
-
-## Projeto
-![Screenshot_347][def]
-
-## Endpoints
-
-## Create
-
-`POST /todo`
-
-    {
-        "name": "Note Title",
-        "status": "false"
-    }
-
-## Read
-
-`GET /todo`
-
-## Update
-
-`PUT /todo`
-
-    {
-        "id": 1,
-        "name": "Note Title",
-        "status": "true"
-    }
-
-## Delete
-
-`DELETE /todo/:id`
-
-
-[def]: https://user-images.githubusercontent.com/96514967/220210812-0a28f6a0-5e17-40d1-94c1-b3a6009c2975.
 
 # Backend
 
@@ -67,4 +31,34 @@
 - [React Icons](https://react-icons.github.io/react-icons/)
 - [React Router Dom](https://reactrouter.com/web/guides/quick-start)
 
+## Projeto
+![Screenshot_442](https://user-images.githubusercontent.com/96514967/231570107-deb3de7c-542b-43e0-ae16-f4dc66bebb16.png)
 
+## Endpoints
+
+## Create
+
+`POST /todos`
+
+    {
+        "name": "Title",
+        "status": "false"
+    }
+
+## Read
+
+`GET /todos`
+
+## Update
+
+`PUT /todos`
+
+    {
+        "id": 1,
+        "name": "Title",
+        "status": "true"
+    }
+
+## Delete
+
+`DELETE /todos/:id`
