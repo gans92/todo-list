@@ -1,5 +1,5 @@
 import "./App.css";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { AiOutlineEdit, AiOutlineDelete } from "react-icons/ai";
 
@@ -36,41 +36,37 @@ function App() {
     setSelectedTodo(todo);
     setInputVisility(true);
   }
-
   async function getTodos() {
-    const response = await axios.get("http://localhost:3003/todos");
+    const response = await axios.get("https://backend-todolist-c12t.onrender.com/todos");
     setTodos(response.data);
     console.log(response.data);
   }
-
   async function editTodo() {
-    const response = await axios.put("http://localhost:3003/todos", {
+    const response = await axios.put("https://backend-todolist-c12t.onrender.com/todos", {
       id: selectedTodo.id,
       name: inputValue,
     });
+    
     setSelectedTodo();
     setInputVisility(false);
     getTodos();
     setInputValue("");
   }
-
   async function deleteTodo(todo) {
     const response = await axios.delete(
-      `http://localhost:3003/todos/${todo.id}`
+      `https://backend-todolist-c12t.onrender.com/todos/${todo.id}`
     );
     getTodos();
   }
-
   async function modifyStatusTodo(todo) {
-    const response = await axios.put("http://localhost:3003/todos", {
+    const response = await axios.put("https://backend-todolist-c12t.onrender.com/todos", {
       id: todo.id,
       status: !todo.status,
     });
     getTodos();
   }
-
   async function createTodo() {
-    const response = await axios.post("http://localhost:3003/todos", {
+    const response = await axios.post("https://backend-todolist-c12t.onrender.com/todos", {
       name: inputValue,
     });
     getTodos();

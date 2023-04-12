@@ -1,8 +1,11 @@
+
+
+
 ### test
-GET http://localhost:3003/health
+GET https://backend-todolist-c12t.onrender.com/health
 
 ### post
-POST http://localhost:3003/todos
+POST https://backend-todolist-c12t.onrender.com/todos
 Content-Type: application/json
 
 {
@@ -10,17 +13,17 @@ Content-Type: application/json
 }
 
 ### get
-GET http://localhost:3003/todos
+GET https://backend-todolist-c12t.onrender.com/todos
 
 ### put
 PUT http://localhost:3003/todos
 Content-Type: application/json
 
 {
-    "id": 5,
-    "name": "teste de atualização",
-    "status": false
+    "id": 1,
+    "status": "true",
+    "name": "teste de atualização"
 }
 
 ### delete
-DELETE http://localhost:3003/todos/5
+DELETE http://localhost:3003/todos/10
