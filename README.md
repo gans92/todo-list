@@ -13,9 +13,14 @@ Nesse case você irá criar uma aplicação de lista de tarefas, onde o usuário
 
 ## Dicas
 
-- [ ] Utilize o [React Icons](https://react-icons.github.io/react-icons/) para adicionar ícones
-- [ ] Utilize o [React Router Dom](https://reactrouter.com/web/guides/quick-start) para criar as rotas
-- [ ] Utilize o [Axios](https://axios-http.com/docs/intro) para fazer as requisições
+- [x] Utilize o [React Icons](https://react-icons.github.io/react-icons/) para adicionar ícones
+- [x] Utilize o [React Router Dom](https://reactrouter.com/web/guides/quick-start) para criar as rotas
+- [x] Utilize o [Axios](https://axios-http.com/docs/intro) para fazer as requisições
+- [x] Node.js o [Node.js](https://nodejs.org/en/) para criar o servidor
+- [x] Express o [Express](https://expressjs.com/pt-br/) para criar as rotas
+- [x] TypeScript o [TypeScript](https://www.typescriptlang.org/) para tipar o código
+- [x] MySQL o [MySQL](https://www.mysql.com/) para criar o banco de dados
+
 
 ## Como executar
 
