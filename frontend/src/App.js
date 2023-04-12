@@ -10,11 +10,9 @@ function App() {
         {todos.map((todo) => {
           return (
             <div className="todo">
-              <button
-                onClick={() => modifyStatusTodo(todo)}
-                className="checkbox"
-                style={{ backgroundColor: todo.status ? "#A879E6" : "white" }}
-              ></button>
+              <input type="checkbox" 
+              className="checkbox"
+              ></input>
               <p>{todo.name}</p>
               <button onClick={() => handleWithEditButtonClick(todo)}>
                 <AiOutlineEdit size={20} color={"#64697b"}></AiOutlineEdit>
@@ -61,7 +59,7 @@ function App() {
   async function modifyStatusTodo(todo) {
     const response = await axios.put("https://backend-todolist-c12t.onrender.com/todos", {
       id: todo.id,
-      status: !todo.status,
+      status: true,
     });
     getTodos();
   }

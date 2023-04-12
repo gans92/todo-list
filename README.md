@@ -1,3 +1,22 @@
+# Case Todo-list
+Nesse case você irá criar uma aplicação de lista de tarefas, onde o usuário poderá criar, editar, deletar e marcar como concluída uma tarefa.
+
+## Requisitos
+
+- [x] O usuário deve conseguir criar uma tarefa
+- [x] O usuário deve conseguir editar uma tarefa
+- [x] O usuário deve conseguir deletar uma tarefa
+- [x] O usuário deve conseguir marcar uma tarefa como concluída
+- [x] O usuário deve conseguir ver todas as tarefas
+- [x] O usuário deve conseguir ver todas as tarefas concluídas
+- [x] O usuário deve conseguir ver todas as tarefas não concluídas
+
+## Dicas
+
+- [ ] Utilize o [React Icons](https://react-icons.github.io/react-icons/) para adicionar ícones
+- [ ] Utilize o [React Router Dom](https://reactrouter.com/web/guides/quick-start) para criar as rotas
+- [ ] Utilize o [Axios](https://axios-http.com/docs/intro) para fazer as requisições
+
 ## Como executar
 
 - Clone o repositório
